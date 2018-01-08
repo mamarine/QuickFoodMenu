@@ -13,6 +13,7 @@
 		383BFEA01FFCB0090052E5AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383BFE9F1FFCB0090052E5AE /* Assets.xcassets */; };
 		383BFEA31FFCB0090052E5AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383BFEA11FFCB0090052E5AE /* LaunchScreen.storyboard */; };
 		388723881FFCC2D200EC902B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388723871FFCC2D200EC902B /* NetworkService.swift */; };
+		38E3F774200306A8003B85D1 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3F773200306A8003B85D1 /* APIKeys.swift */; };
 		DE19A04EA8085A8668D42266 /* Pods_QuickFoodMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2096EB8736C800D0C941814E /* Pods_QuickFoodMenu.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		383BFEA21FFCB0090052E5AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383BFEA41FFCB0090052E5AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		388723871FFCC2D200EC902B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		38E3F773200306A8003B85D1 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		948773EEE0D864B3ED9C0A42 /* Pods-QuickFoodMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFoodMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C191FB1DADEFF69E68A395 /* Pods-QuickFoodMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFoodMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 		388723891FFCCD3E00EC902B /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				38E3F773200306A8003B85D1 /* APIKeys.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -184,9 +187,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,6 +246,7 @@
 			files = (
 				383BFE9B1FFCB0090052E5AE /* ViewController.swift in Sources */,
 				388723881FFCC2D200EC902B /* NetworkService.swift in Sources */,
+				38E3F774200306A8003B85D1 /* APIKeys.swift in Sources */,
 				383BFE991FFCB0090052E5AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

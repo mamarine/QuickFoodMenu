@@ -7,4 +7,10 @@ target 'QuickFoodMenu' do
 
   # Pods for QuickFoodMenu
   pod 'Alamofire', '~> 4.5'
+
+  # google place
+
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
 end
