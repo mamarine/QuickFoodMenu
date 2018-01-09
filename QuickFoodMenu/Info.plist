@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>need to access location data to get restaurant info</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>need to access location data to get restaurant info</string>
 </dict>
 </plist>
