@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-let NETSERVICE = NetworkService.sharedInstance
+let NETSERVICE = RestaurantAPIService.sharedInstance
 
 enum NetworkServiceType: String {
     case GET = "GET"
@@ -18,8 +18,8 @@ enum NetworkServiceType: String {
     case UPDATE = "UPDATE"
 }
 
-final class NetworkService: NSObject {
-    static let sharedInstance = NetworkService()
+final class RestaurantAPIService: NSObject {
+    static let sharedInstance = RestaurantAPIService()
     private let defaultSession = URLSession(configuration: .default)
     private var dataTask: URLSessionDataTask?
     var errorMessage = ""
