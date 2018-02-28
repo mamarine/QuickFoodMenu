@@ -8,14 +8,16 @@
 
 import Foundation
 
-struct Restaurant {
-    var name:String;
-    var address:String;
-    var placeID:String;
+struct Restaurant: ParsedItem {
+    var name:String
+    var address:String
+    var placeID:String
     var foods = Array<Food>()
-    init(name:String, address:String,placeID:String) {
+    var imageURL: URL?
+    init(name:String, address:String,placeID:String,imageURL:URL?) {
         self.name = name
         self.address = address
         self.placeID = placeID
+        self.imageURL = imageURL
     }
 }

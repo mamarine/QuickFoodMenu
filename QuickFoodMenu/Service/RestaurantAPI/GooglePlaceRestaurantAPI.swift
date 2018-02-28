@@ -15,7 +15,7 @@ class GooglePlaceRestaurantAPI: RestaurantAPIStrategy {
 
     func fetchRestaurantInfo(withPlaceID placeID: String) -> Restaurant {
         self.loadPhotosForPlace(placeID: placeID)
-        return Restaurant(name: "", address: "", placeID: "")
+        return Restaurant(name: "", address: "", placeID: "", imageURL:nil)
     }
 
     func loadPhotosForPlace(placeID: String) {

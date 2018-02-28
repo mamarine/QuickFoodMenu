@@ -57,11 +57,11 @@ final class LocationService : NSObject {
 //                    let test = GooglePlaceRestaurantAPI()
 //                    test.fetchRestaurantInfo(withPlaceID: likelihood.place.placeID)
                     let operation = FetchRestaurantInfoOperation(placeID: likelihood.place.placeID)
-//                    signUpOp.success = { item in
-//                        print("User id is \(item.uniqueId)")
-//                    }
-//
-//                    signUpOp.failure = { error in print(error.localizedDescription) }
+                    operation.success = { restaurant in
+                        print("restaurant name is \(restaurant.name)")
+                    }
+
+                    operation.failure = { error in print(error.localizedDescription) }
                     NetworkQueue.shared.addOperation(operation)
                 }
             }
