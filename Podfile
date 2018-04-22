@@ -7,6 +7,7 @@ target 'QuickFoodMenu' do
 
   # Pods for QuickFoodMenu
   pod 'Alamofire', '~> 4.5'
+  pod 'AlamofireImage'
 
   # google place
 

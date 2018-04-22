@@ -9,6 +9,5 @@
 import Foundation
 
 protocol RestaurantAPIStrategy {
-//    func fetchRestaurantInfo(withName name:String) -> Restaurant
     func fetchRestaurantInfo(withPlaceID placeID:String) -> Restaurant
 }

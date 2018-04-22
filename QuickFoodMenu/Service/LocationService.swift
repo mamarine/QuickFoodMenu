@@ -33,38 +33,14 @@ final class LocationService : NSObject {
         return self
     }
 
-    func getCurrentPlace() {
+    func getCurrentPlace(complete: ((GMSPlaceLikelihoodList?) -> Void)?) {
         placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
             if let error = error {
                 print("Pick Place error: \(error.localizedDescription)")
                 return
             }
 
-            if let placeLikelihoodList = placeLikelihoodList {
-                var itemCount = PLACES_LOAD_MAX_AMOUNT;
-                for likelihood in placeLikelihoodList.likelihoods {
-                    itemCount = itemCount - 1
-                    if itemCount < 0 {
-                        break
-                    }
-
-                    print("place.name:\(likelihood.place.name)")
-                    let typeArray = likelihood.place.types
-                    for typeStr in typeArray {
-                        print("type:\(typeStr)")
-                    }
-
-//                    let test = GooglePlaceRestaurantAPI()
-//                    test.fetchRestaurantInfo(withPlaceID: likelihood.place.placeID)
-                    let operation = FetchRestaurantInfoOperation(placeID: likelihood.place.placeID)
-                    operation.success = { restaurant in
-                        print("restaurant name is \(restaurant.name)")
-                    }
-
-                    operation.failure = { error in print(error.localizedDescription) }
-                    NetworkQueue.shared.addOperation(operation)
-                }
-            }
+            complete?(placeLikelihoodList)
         })
     }
 

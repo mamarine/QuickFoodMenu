@@ -13,7 +13,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        LOCATIONSERVICE.getCurrentPlace()
+        RestaurantDataManager.shareInstance.fetchRestaurantData { error in
+            guard error == nil else {
+                return
+            }
+
+            self.performSegue(withIdentifier: "RestaurantTableSegueVCID", sender: self)
+        }
     }
 }
 
