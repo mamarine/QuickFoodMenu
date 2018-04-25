@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LaunchingViewController.swift
 //  QuickFoodMenu
 //
 //  Created by maojie on 1/2/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class LaunchingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

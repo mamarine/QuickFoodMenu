@@ -35,13 +35,14 @@ class RestaurantTableViewController: UITableViewController {
 
         if let cell = cell  as? RestaurantTableViewCell {
             cell.restaurantImageView.image = nil
-            cell.restaurantImageView.af_setImage(withURL: restaurants[indexPath.row].imageURL!)
+            cell.restaurantImageView.af_setImage(withURL: restaurants[indexPath.row].coverImage.url)
         }
 
         return cell
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (SCREEN_WIDTH-36) / 46 * 34 - 40
+        return (SCREEN_WIDTH-36) / CGFloat(restaurants[indexPath.row].coverImage.width)
+            * CGFloat(restaurants[indexPath.row].coverImage.height) - 40
     }
 }

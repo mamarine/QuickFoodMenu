@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launching View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuickFoodMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchingViewController" customModule="QuickFoodMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,20 +21,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="wuN-ED-uWn" kind="show" identifier="RestaurantTableSegueVCID" id="eKZ-80-9ts"/>
+                        <segue destination="jsL-0A-Uvw" kind="show" identifier="RestaurantTableSegueVCID" id="4Cq-eJ-OeK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Restaurant Table View Controller-->
+        <!--Quick Menu-->
         <scene sceneID="9FN-E8-tqB">
             <objects>
                 <tableViewController id="wuN-ED-uWn" customClass="RestaurantTableViewController" customModule="QuickFoodMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0KN-nS-cbH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.78988210530000003" green="0.78988210530000003" blue="0.78988210530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantCellReuseID" rowHeight="159" id="JNL-gm-Bao" customClass="RestaurantTableViewCell" customModule="QuickFoodMenu" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="159"/>
@@ -43,7 +43,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wQ-ab-04B">
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wQ-ab-04B" customClass="RoundUIView" customModule="QuickFoodMenu" customModuleProvider="target">
                                             <rect key="frame" x="18" y="8" width="339" height="147"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OCW-RX-LZ5">
@@ -57,6 +57,14 @@
                                                 <constraint firstItem="OCW-RX-LZ5" firstAttribute="leading" secondItem="6wQ-ab-04B" secondAttribute="leading" id="u7h-4q-cjI"/>
                                                 <constraint firstAttribute="trailing" secondItem="OCW-RX-LZ5" secondAttribute="trailing" id="vbO-a8-IRY"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="0.78988210530000003" green="0.78988210530000003" blue="0.78988210530000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,10 +85,27 @@
                             <outlet property="delegate" destination="wuN-ED-uWn" id="MYo-wN-LyQ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Quick Menu" id="1hD-J5-XuX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jch-uO-hew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="118"/>
+            <point key="canvasLocation" x="2113" y="42"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ixi-uA-xGy">
+            <objects>
+                <navigationController id="jsL-0A-Uvw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Onv-1F-ZyJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wuN-ED-uWn" kind="relationship" relationship="rootViewController" id="Sja-Og-CkF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdx-3L-nw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1382" y="42"/>
         </scene>
     </scenes>
 </document>

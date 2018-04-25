@@ -13,11 +13,13 @@ struct Restaurant: ParsedItem {
     var address:String
     var placeID:String
     var foods = Array<Food>()
-    var imageURL: URL?
-    init(name:String, address:String,placeID:String,imageURL:URL?) {
+    var coverImage: NetworkImage
+    var images: Array<NetworkImage>
+    init(name:String, address:String, placeID:String, imageURLs:Array<NetworkImage>) {
         self.name = name
         self.address = address
         self.placeID = placeID
-        self.imageURL = imageURL
+        self.coverImage = imageURLs.first ?? NetworkImage(url: URL(fileURLWithPath: "emptyDish"),width: 0,height: 0)
+        self.images = imageURLs
     }
 }
