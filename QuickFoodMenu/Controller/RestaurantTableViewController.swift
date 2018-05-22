@@ -45,4 +45,11 @@ class RestaurantTableViewController: UITableViewController {
         return (SCREEN_WIDTH-36) / CGFloat(restaurants[indexPath.row].coverImage.width)
             * CGFloat(restaurants[indexPath.row].coverImage.height) - 40
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let targetVC = storyboard.instantiateViewController(withIdentifier: "MenuPicCollectionVCID") as! MenuPicCollectionViewController
+        targetVC.dishes = restaurants[indexPath.row].images
+        self.navigationController?.pushViewController(targetVC, animated: true)
+    }
 }

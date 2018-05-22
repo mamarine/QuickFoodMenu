@@ -89,7 +89,51 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jch-uO-hew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="42"/>
+            <point key="canvasLocation" x="1498" y="84"/>
+        </scene>
+        <!--Menu Pic Collection View Controller-->
+        <scene sceneID="jwt-Un-i0A">
+            <objects>
+                <collectionViewController storyboardIdentifier="MenuPicCollectionVCID" id="z8m-lm-NUN" customClass="MenuPicCollectionViewController" customModule="QuickFoodMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XHu-cN-UGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewLayout key="collectionViewLayout" id="KFO-dM-o5n" customClass="MasonryLayout" customModule="QuickFoodMenu" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MENUPICCELLID" id="v3a-cz-XqN" customClass="MenuPicCollectionViewCell" customModule="QuickFoodMenu" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ag6-Qj-LYu">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ag6-Qj-LYu" secondAttribute="bottom" id="49e-gf-KCT"/>
+                                    <constraint firstItem="ag6-Qj-LYu" firstAttribute="top" secondItem="v3a-cz-XqN" secondAttribute="top" id="Adp-R5-dE4"/>
+                                    <constraint firstAttribute="trailing" secondItem="ag6-Qj-LYu" secondAttribute="trailing" id="DQF-Jz-8ac"/>
+                                    <constraint firstItem="ag6-Qj-LYu" firstAttribute="leading" secondItem="v3a-cz-XqN" secondAttribute="leading" id="ZIG-Ya-XRJ"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="imageView" destination="ag6-Qj-LYu" id="dtl-Wp-SdL"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="z8m-lm-NUN" id="JrF-uz-VK5"/>
+                            <outlet property="delegate" destination="z8m-lm-NUN" id="iZ7-Hd-sMr"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQg-qg-wME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2265" y="82"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ixi-uA-xGy">
@@ -105,7 +149,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fdx-3L-nw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1382" y="42"/>
+            <point key="canvasLocation" x="785" y="84"/>
         </scene>
     </scenes>
 </document>

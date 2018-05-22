@@ -12,7 +12,6 @@ struct Restaurant: ParsedItem {
     var name:String
     var address:String
     var placeID:String
-    var foods = Array<Food>()
     var coverImage: NetworkImage
     var images: Array<NetworkImage>
     init(name:String, address:String, placeID:String, imageURLs:Array<NetworkImage>) {
