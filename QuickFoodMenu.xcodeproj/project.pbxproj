@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		38233D23200C43120016C2AC /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D22200C43120016C2AC /* GlobalConfig.swift */; };
 		38233D26200C48040016C2AC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D25200C48040016C2AC /* Restaurant.swift */; };
-		38233D2B200D3BA00016C2AC /* RestaurantAPIStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D2A200D3BA00016C2AC /* RestaurantAPIStrategy.swift */; };
 		38233D2F200D44B70016C2AC /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D2E200D44B70016C2AC /* RestaurantDataManager.swift */; };
 		3836D7FB2091332E005F8B36 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836D7FA2091332E005F8B36 /* NetworkImage.swift */; };
 		383BFE991FFCB0090052E5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383BFE981FFCB0090052E5AE /* AppDelegate.swift */; };
@@ -46,7 +45,6 @@
 		2096EB8736C800D0C941814E /* Pods_QuickFoodMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickFoodMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38233D22200C43120016C2AC /* GlobalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		38233D25200C48040016C2AC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		38233D2A200D3BA00016C2AC /* RestaurantAPIStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIStrategy.swift; sourceTree = "<group>"; };
 		38233D2E200D44B70016C2AC /* RestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
 		3836D7FA2091332E005F8B36 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		383BFE951FFCB0090052E5AE /* QuickFoodMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickFoodMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +107,6 @@
 				387481AB20452713004068CC /* Parser */,
 				387481A02044C531004068CC /* Requests */,
 				3874819D2044C1FB004068CC /* Operations */,
-				38233D2A200D3BA00016C2AC /* RestaurantAPIStrategy.swift */,
 				38233D2E200D44B70016C2AC /* RestaurantDataManager.swift */,
 			);
 			path = RestaurantAPI;
@@ -118,6 +115,7 @@
 		383BFE8C1FFCB0080052E5AE = {
 			isa = PBXGroup;
 			children = (
+				38D74ED720B4B5300063BC87 /* MJNetworkLib */,
 				3841D8C42027C19700856D95 /* Network */,
 				383BFE971FFCB0090052E5AE /* QuickFoodMenu */,
 				383BFE961FFCB0090052E5AE /* Products */,
@@ -273,6 +271,13 @@
 				38DF5226208BA128000A286B /* Styles.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		38D74ED720B4B5300063BC87 /* MJNetworkLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MJNetworkLib;
 			sourceTree = "<group>";
 		};
 		38DF5220208A94FE000A286B /* Controller */ = {
@@ -471,7 +476,6 @@
 				387481B020461474004068CC /* NSError+Failure.swift in Sources */,
 				38233D23200C43120016C2AC /* GlobalConfig.swift in Sources */,
 				3874819C2043E737004068CC /* NetworkOperation.swift in Sources */,
-				38233D2B200D3BA00016C2AC /* RestaurantAPIStrategy.swift in Sources */,
 				387481A72045255C004068CC /* ResponseMapper.swift in Sources */,
 				3846026D20923EB200EA89B5 /* MasonryLayout.swift in Sources */,
 				3874819A2040DA3C004068CC /* NetworkConfiguration.swift in Sources */,
