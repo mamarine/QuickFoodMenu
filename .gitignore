@@ -68,3 +68,8 @@ fastlane/screenshots
 fastlane/test_output
 
 APIKeys.swift
+
+#CocoaPods
+Pods
+!Podfile
+!Podfile.lock
