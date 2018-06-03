@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 
 class RestaurantTableViewController: UITableViewController {
-    var restaurants = RestaurantDataManager.shareInstance.getRestaurants()
+    var restaurants = [Restaurant]()//RestaurantDataManagerV1.shareInstance.getRestaurants()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -43,7 +43,7 @@ class RestaurantTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (SCREEN_WIDTH-36) / CGFloat(restaurants[indexPath.row].coverImage.width)
-            * CGFloat(restaurants[indexPath.row].coverImage.height) - 40
+            * CGFloat(restaurants[indexPath.row].coverImage.height)
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
