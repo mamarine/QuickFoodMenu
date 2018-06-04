@@ -9,19 +9,13 @@
 import UIKit
 import AlamofireImage
 
-class RestaurantTableViewController: UITableViewController {
+class RestaurantListViewController: UITableViewController {
     var restaurants = [Restaurant]()//RestaurantDataManagerV1.shareInstance.getRestaurants()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
