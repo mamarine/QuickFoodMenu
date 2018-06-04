@@ -24,7 +24,6 @@ public struct URLParameterEncoder: ParameterEncoder {
                 urlComponents.queryItems?.append(queryItem)
             }
             urlRequest.url = urlComponents.url
-            print(urlComponents.url)
         }
 
         if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil {

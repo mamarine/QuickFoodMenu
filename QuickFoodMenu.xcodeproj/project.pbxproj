@@ -216,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				381192FF20BD251000BB0D47 /* NetworkFrameWork */,
-				3841D8C42027C19700856D95 /* Network */,
+				3841D8C42027C19700856D95 /* NetworkFrameworkV1 */,
 				383BFE971FFCB0090052E5AE /* QuickFoodMenu */,
 				383BFE961FFCB0090052E5AE /* Products */,
 				C16752AA6A13F2CE05BB9517 /* Pods */,
@@ -259,7 +259,7 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		3841D8C42027C19700856D95 /* Network */ = {
+		3841D8C42027C19700856D95 /* NetworkFrameworkV1 */ = {
 			isa = PBXGroup;
 			children = (
 				387481AE2046144A004068CC /* Helper */,
@@ -270,7 +270,7 @@
 				3841D8C820283B9700856D95 /* Networking */,
 				3841D8C52027DC3F00856D95 /* Operation */,
 			);
-			path = Network;
+			path = NetworkFrameworkV1;
 			sourceTree = "<group>";
 		};
 		3841D8C52027DC3F00856D95 /* Operation */ = {

@@ -51,6 +51,5 @@ extension Restaurant: Decodable {
     private static func buildImageURL(photoRef:String) -> URL? {
         let router = Router<RestaurantGoogleApi>()
         return router.buildURL(from: RestaurantGoogleApi.restaurantPhoto(maxwidth: 400, photoreference: photoRef))
-//        return URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=" + photoRef + "&key=\(GOOGLE_PLACE_WEB_API_KEY)")
     }
 }
