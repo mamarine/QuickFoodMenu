@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3811930620BD2DD500BB0D47 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3811930520BD2DD500BB0D47 /* HTTPMethod.swift */; };
+		38157BF720BD37B900D45D19 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157BF620BD37B900D45D19 /* HTTPTask.swift */; };
+		38157BF920BD37FC00D45D19 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157BF820BD37FC00D45D19 /* ParameterEncoding.swift */; };
+		38157BFB20BD382E00D45D19 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157BFA20BD382E00D45D19 /* URLParameterEncoding.swift */; };
+		38157BFD20BD385A00D45D19 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157BFC20BD385A00D45D19 /* JSONParameterEncoder.swift */; };
+		38157BFF20BD390900D45D19 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157BFE20BD390900D45D19 /* EndPointType.swift */; };
+		38157C0A20BE21CE00D45D19 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157C0920BE21CE00D45D19 /* Router.swift */; };
+		38157C0E20BE240500D45D19 /* RestaurantEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157C0D20BE240500D45D19 /* RestaurantEndpoint.swift */; };
 		38233D23200C43120016C2AC /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D22200C43120016C2AC /* GlobalConfig.swift */; };
 		38233D26200C48040016C2AC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D25200C48040016C2AC /* Restaurant.swift */; };
-		38233D2F200D44B70016C2AC /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D2E200D44B70016C2AC /* RestaurantDataManager.swift */; };
+		38233D2F200D44B70016C2AC /* RestaurantDataManagerV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38233D2E200D44B70016C2AC /* RestaurantDataManagerV1.swift */; };
 		3836D7FB2091332E005F8B36 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3836D7FA2091332E005F8B36 /* NetworkImage.swift */; };
+		383B4C2F20BFC618004A493D /* RestaurantApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383B4C2E20BFC618004A493D /* RestaurantApiResponse.swift */; };
+		383B4C3120C1DB2A004A493D /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383B4C3020C1DB2A004A493D /* RestaurantDataManager.swift */; };
 		383BFE991FFCB0090052E5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383BFE981FFCB0090052E5AE /* AppDelegate.swift */; };
 		383BFE9B1FFCB0090052E5AE /* LaunchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383BFE9A1FFCB0090052E5AE /* LaunchingViewController.swift */; };
 		383BFE9E1FFCB0090052E5AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383BFE9C1FFCB0090052E5AE /* Main.storyboard */; };
@@ -43,10 +53,20 @@
 
 /* Begin PBXFileReference section */
 		2096EB8736C800D0C941814E /* Pods_QuickFoodMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickFoodMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3811930520BD2DD500BB0D47 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		38157BF620BD37B900D45D19 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		38157BF820BD37FC00D45D19 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		38157BFA20BD382E00D45D19 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		38157BFC20BD385A00D45D19 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		38157BFE20BD390900D45D19 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		38157C0920BE21CE00D45D19 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		38157C0D20BE240500D45D19 /* RestaurantEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEndpoint.swift; sourceTree = "<group>"; };
 		38233D22200C43120016C2AC /* GlobalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		38233D25200C48040016C2AC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		38233D2E200D44B70016C2AC /* RestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
+		38233D2E200D44B70016C2AC /* RestaurantDataManagerV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManagerV1.swift; sourceTree = "<group>"; };
 		3836D7FA2091332E005F8B36 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
+		383B4C2E20BFC618004A493D /* RestaurantApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantApiResponse.swift; sourceTree = "<group>"; };
+		383B4C3020C1DB2A004A493D /* RestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
 		383BFE951FFCB0090052E5AE /* QuickFoodMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickFoodMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		383BFE981FFCB0090052E5AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		383BFE9A1FFCB0090052E5AE /* LaunchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +112,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		381192FF20BD251000BB0D47 /* NetworkFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				3811930420BD25D000BB0D47 /* NetworkStack */,
+				3811930320BD259E00BB0D47 /* Router */,
+				3811930220BD258700BB0D47 /* Manager */,
+				3811930120BD256B00BB0D47 /* Encoding */,
+				3811930020BD253C00BB0D47 /* Endpoint */,
+			);
+			path = NetworkFrameWork;
+			sourceTree = "<group>";
+		};
+		3811930020BD253C00BB0D47 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				38157BFE20BD390900D45D19 /* EndPointType.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		3811930120BD256B00BB0D47 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				38157BF820BD37FC00D45D19 /* ParameterEncoding.swift */,
+				38157BFA20BD382E00D45D19 /* URLParameterEncoding.swift */,
+				38157BFC20BD385A00D45D19 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		3811930220BD258700BB0D47 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3811930320BD259E00BB0D47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				38157C0920BE21CE00D45D19 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3811930420BD25D000BB0D47 /* NetworkStack */ = {
+			isa = PBXGroup;
+			children = (
+				3811930520BD2DD500BB0D47 /* HTTPMethod.swift */,
+				38157BF620BD37B900D45D19 /* HTTPTask.swift */,
+			);
+			path = NetworkStack;
+			sourceTree = "<group>";
+		};
+		38157C0B20BE23AF00D45D19 /* RestaurantAPI2 */ = {
+			isa = PBXGroup;
+			children = (
+				383B4C2720BF4F1A004A493D /* Response */,
+				38157C0C20BE23BD00D45D19 /* EndPoint */,
+				383B4C3020C1DB2A004A493D /* RestaurantDataManager.swift */,
+			);
+			path = RestaurantAPI2;
+			sourceTree = "<group>";
+		};
+		38157C0C20BE23BD00D45D19 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				38157C0D20BE240500D45D19 /* RestaurantEndpoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
 		38233D24200C45710016C2AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,16 +199,24 @@
 				387481AB20452713004068CC /* Parser */,
 				387481A02044C531004068CC /* Requests */,
 				3874819D2044C1FB004068CC /* Operations */,
-				38233D2E200D44B70016C2AC /* RestaurantDataManager.swift */,
+				38233D2E200D44B70016C2AC /* RestaurantDataManagerV1.swift */,
 			);
 			path = RestaurantAPI;
+			sourceTree = "<group>";
+		};
+		383B4C2720BF4F1A004A493D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				383B4C2E20BFC618004A493D /* RestaurantApiResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		383BFE8C1FFCB0080052E5AE = {
 			isa = PBXGroup;
 			children = (
-				38D74ED720B4B5300063BC87 /* MJNetworkLib */,
-				3841D8C42027C19700856D95 /* Network */,
+				381192FF20BD251000BB0D47 /* NetworkFrameWork */,
+				3841D8C42027C19700856D95 /* NetworkFrameworkV1 */,
 				383BFE971FFCB0090052E5AE /* QuickFoodMenu */,
 				383BFE961FFCB0090052E5AE /* Products */,
 				C16752AA6A13F2CE05BB9517 /* Pods */,
@@ -152,13 +252,14 @@
 		383BFEAA1FFCB01A0052E5AE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				38157C0B20BE23AF00D45D19 /* RestaurantAPI2 */,
 				38233D29200D38EE0016C2AC /* RestaurantAPI */,
 				387DA2082005702A003C0E12 /* LocationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		3841D8C42027C19700856D95 /* Network */ = {
+		3841D8C42027C19700856D95 /* NetworkFrameworkV1 */ = {
 			isa = PBXGroup;
 			children = (
 				387481AE2046144A004068CC /* Helper */,
@@ -169,7 +270,7 @@
 				3841D8C820283B9700856D95 /* Networking */,
 				3841D8C52027DC3F00856D95 /* Operation */,
 			);
-			path = Network;
+			path = NetworkFrameworkV1;
 			sourceTree = "<group>";
 		};
 		3841D8C52027DC3F00856D95 /* Operation */ = {
@@ -271,13 +372,6 @@
 				38DF5226208BA128000A286B /* Styles.swift */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		38D74ED720B4B5300063BC87 /* MJNetworkLib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MJNetworkLib;
 			sourceTree = "<group>";
 		};
 		38DF5220208A94FE000A286B /* Controller */ = {
@@ -470,6 +564,7 @@
 				383BFE9B1FFCB0090052E5AE /* LaunchingViewController.swift in Sources */,
 				38DF5225208A9829000A286B /* RestaurantTableViewCell.swift in Sources */,
 				3874819F2044C4D2004068CC /* FetchRestaurantInfoOperation.swift in Sources */,
+				38157BF720BD37B900D45D19 /* HTTPTask.swift in Sources */,
 				387481AD20452758004068CC /* RestaurantInfoResponseMapper.swift in Sources */,
 				3836D7FB2091332E005F8B36 /* NetworkImage.swift in Sources */,
 				3846026A2091416C00EA89B5 /* MenuPicCollectionViewController.swift in Sources */,
@@ -477,18 +572,27 @@
 				38233D23200C43120016C2AC /* GlobalConfig.swift in Sources */,
 				3874819C2043E737004068CC /* NetworkOperation.swift in Sources */,
 				387481A72045255C004068CC /* ResponseMapper.swift in Sources */,
+				383B4C2F20BFC618004A493D /* RestaurantApiResponse.swift in Sources */,
 				3846026D20923EB200EA89B5 /* MasonryLayout.swift in Sources */,
 				3874819A2040DA3C004068CC /* NetworkConfiguration.swift in Sources */,
+				38157BFB20BD382E00D45D19 /* URLParameterEncoding.swift in Sources */,
+				38157C0A20BE21CE00D45D19 /* Router.swift in Sources */,
 				387481A22044C549004068CC /* FetchRestaurantInfoRequest.swift in Sources */,
 				38233D26200C48040016C2AC /* Restaurant.swift in Sources */,
+				3811930620BD2DD500BB0D47 /* HTTPMethod.swift in Sources */,
+				38157C0E20BE240500D45D19 /* RestaurantEndpoint.swift in Sources */,
 				3846026F20927F7D00EA89B5 /* MenuPicCollectionViewCell.swift in Sources */,
 				387DA2092005702A003C0E12 /* LocationService.swift in Sources */,
 				38DF5227208BA128000A286B /* Styles.swift in Sources */,
 				38DF522A208C2A21000A286B /* RoundUIView.swift in Sources */,
 				387481AA20452598004068CC /* ParsedItem.swift in Sources */,
 				38DF5222208A9536000A286B /* RestaurantTableViewController.swift in Sources */,
+				38157BFD20BD385A00D45D19 /* JSONParameterEncoder.swift in Sources */,
 				387481972040CBE0004068CC /* NetworkService.swift in Sources */,
-				38233D2F200D44B70016C2AC /* RestaurantDataManager.swift in Sources */,
+				38233D2F200D44B70016C2AC /* RestaurantDataManagerV1.swift in Sources */,
+				38157BF920BD37FC00D45D19 /* ParameterEncoding.swift in Sources */,
+				38157BFF20BD390900D45D19 /* EndPointType.swift in Sources */,
+				383B4C3120C1DB2A004A493D /* RestaurantDataManager.swift in Sources */,
 				38E3F774200306A8003B85D1 /* APIKeys.swift in Sources */,
 				3841D8C72027DC5B00856D95 /* AsyncOperation.swift in Sources */,
 				383BFE991FFCB0090052E5AE /* AppDelegate.swift in Sources */,

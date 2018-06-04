@@ -1,5 +1,5 @@
 //
-//  RestaurantDataManager.swift
+//  RestaurantDataManagerV1.swift
 //  QuickFoodMenu
 //
 //  Created by maojie on 1/15/18.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-class RestaurantDataManager: NSObject {
+class RestaurantDataManagerV1: NSObject {
     private var restaurantInfos = Array<Restaurant>()
 
-    static let shareInstance: RestaurantDataManager = {
-        let instance = RestaurantDataManager()
+    static let shareInstance: RestaurantDataManagerV1 = {
+        let instance = RestaurantDataManagerV1()
         return instance
     } ()
 

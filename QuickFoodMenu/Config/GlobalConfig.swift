@@ -7,3 +7,12 @@
 //
 
 let PLACES_LOAD_MAX_AMOUNT = 20
+
+enum NetworkBuildConfiguration {
+    case production
+    case debug
+}
+
+class GlobalBuildConfig {
+    static var networkConfig = NetworkBuildConfiguration.debug
+}
