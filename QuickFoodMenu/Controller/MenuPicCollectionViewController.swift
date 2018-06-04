@@ -11,7 +11,6 @@ import UIKit
 class MenuPicCollectionViewController: UICollectionViewController {
 
     private let reuseIdentifier = "MENUPICCELLID"
-    // MARK: temp dummy code
     var dishes = Array<NetworkImage>()
 
     override func viewDidLoad() {
