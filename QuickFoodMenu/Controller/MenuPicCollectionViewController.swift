@@ -19,7 +19,7 @@ class MenuPicCollectionViewController: UICollectionViewController {
             layout.delegate = self
         }
 
-        collectionView?.contentInset = UIEdgeInsets(top: 23, left: 16, bottom: 10, right: 16)
+        collectionView?.contentInset = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
     }
 
     override func didReceiveMemoryWarning() {

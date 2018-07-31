@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17CB4982DAFE28C655A68008 /* Pods_QuickFoodMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC4AABE872F02EC909777FA /* Pods_QuickFoodMenu.framework */; };
 		3811930620BD2DD500BB0D47 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3811930520BD2DD500BB0D47 /* HTTPMethod.swift */; };
 		38157BF720BD37B900D45D19 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157BF620BD37B900D45D19 /* HTTPTask.swift */; };
 		38157BF920BD37FC00D45D19 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38157BF820BD37FC00D45D19 /* ParameterEncoding.swift */; };
@@ -44,16 +45,16 @@
 		387481AD20452758004068CC /* RestaurantInfoResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387481AC20452758004068CC /* RestaurantInfoResponseMapper.swift */; };
 		387481B020461474004068CC /* NSError+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387481AF20461474004068CC /* NSError+Failure.swift */; };
 		387DA2092005702A003C0E12 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387DA2082005702A003C0E12 /* LocationService.swift */; };
+		38C7E5B02108594E00186423 /* QFMObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7E5AF2108594E00186423 /* QFMObservable.swift */; };
 		38DF5222208A9536000A286B /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DF5221208A9536000A286B /* RestaurantListViewController.swift */; };
 		38DF5225208A9829000A286B /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DF5224208A9829000A286B /* RestaurantTableViewCell.swift */; };
 		38DF5227208BA128000A286B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DF5226208BA128000A286B /* Styles.swift */; };
 		38DF522A208C2A21000A286B /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DF5229208C2A21000A286B /* RoundUIView.swift */; };
 		38E3F774200306A8003B85D1 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3F773200306A8003B85D1 /* APIKeys.swift */; };
-		DE19A04EA8085A8668D42266 /* Pods_QuickFoodMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2096EB8736C800D0C941814E /* Pods_QuickFoodMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2096EB8736C800D0C941814E /* Pods_QuickFoodMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickFoodMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C861EE03740D590FF6B453 /* Pods-QuickFoodMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFoodMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		3811930520BD2DD500BB0D47 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		38157BF620BD37B900D45D19 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		38157BF820BD37FC00D45D19 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -93,13 +94,14 @@
 		387481AC20452758004068CC /* RestaurantInfoResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoResponseMapper.swift; sourceTree = "<group>"; };
 		387481AF20461474004068CC /* NSError+Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Failure.swift"; sourceTree = "<group>"; };
 		387DA2082005702A003C0E12 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		38C7E5AF2108594E00186423 /* QFMObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFMObservable.swift; sourceTree = "<group>"; };
 		38DF5221208A9536000A286B /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		38DF5224208A9829000A286B /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		38DF5226208BA128000A286B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		38DF5229208C2A21000A286B /* RoundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
 		38E3F773200306A8003B85D1 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
-		948773EEE0D864B3ED9C0A42 /* Pods-QuickFoodMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFoodMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu.debug.xcconfig"; sourceTree = "<group>"; };
-		E7C191FB1DADEFF69E68A395 /* Pods-QuickFoodMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFoodMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu.release.xcconfig"; sourceTree = "<group>"; };
+		3D78872F138E673F91DE2032 /* Pods-QuickFoodMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFoodMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu.release.xcconfig"; sourceTree = "<group>"; };
+		FDC4AABE872F02EC909777FA /* Pods_QuickFoodMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickFoodMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE19A04EA8085A8668D42266 /* Pods_QuickFoodMenu.framework in Frameworks */,
+				17CB4982DAFE28C655A68008 /* Pods_QuickFoodMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +231,8 @@
 				3841D8C42027C19700856D95 /* NetworkFrameworkV1 */,
 				383BFE971FFCB0090052E5AE /* QuickFoodMenu */,
 				383BFE961FFCB0090052E5AE /* Products */,
-				C16752AA6A13F2CE05BB9517 /* Pods */,
-				D163B250368A3949B70BF1AB /* Frameworks */,
+				5A730EFCFAFAA76E5812F04A /* Pods */,
+				75790BF3C9853548B92C1D05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +247,8 @@
 		383BFE971FFCB0090052E5AE /* QuickFoodMenu */ = {
 			isa = PBXGroup;
 			children = (
+				38C7E5AE2108592500186423 /* Helper */,
+				38C7E5AB2108581A00186423 /* Protocol */,
 				383B4C3220C4D493004A493D /* ViewModel */,
 				38DF5223208A9807000A286B /* View */,
 				38DF5220208A94FE000A286B /* Controller */,
@@ -385,6 +389,21 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		38C7E5AB2108581A00186423 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		38C7E5AE2108592500186423 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				38C7E5AF2108594E00186423 /* QFMObservable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		38DF5220208A94FE000A286B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,19 +433,19 @@
 			path = BasicUIComponent;
 			sourceTree = "<group>";
 		};
-		C16752AA6A13F2CE05BB9517 /* Pods */ = {
+		5A730EFCFAFAA76E5812F04A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				948773EEE0D864B3ED9C0A42 /* Pods-QuickFoodMenu.debug.xcconfig */,
-				E7C191FB1DADEFF69E68A395 /* Pods-QuickFoodMenu.release.xcconfig */,
+				03C861EE03740D590FF6B453 /* Pods-QuickFoodMenu.debug.xcconfig */,
+				3D78872F138E673F91DE2032 /* Pods-QuickFoodMenu.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D163B250368A3949B70BF1AB /* Frameworks */ = {
+		75790BF3C9853548B92C1D05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2096EB8736C800D0C941814E /* Pods_QuickFoodMenu.framework */,
+				FDC4AABE872F02EC909777FA /* Pods_QuickFoodMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -438,12 +457,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 383BFEA71FFCB0090052E5AE /* Build configuration list for PBXNativeTarget "QuickFoodMenu" */;
 			buildPhases = (
-				7B630F08259C296A2F54872A /* [CP] Check Pods Manifest.lock */,
+				F7A4D316C5C9905CEC35D3EC /* [CP] Check Pods Manifest.lock */,
 				383BFE911FFCB0080052E5AE /* Sources */,
 				383BFE921FFCB0080052E5AE /* Frameworks */,
 				383BFE931FFCB0080052E5AE /* Resources */,
-				A1EB6EBA5BD5F2433956DEFC /* [CP] Embed Pods Frameworks */,
-				693F0A93BB4847EA429A7A4D /* [CP] Copy Pods Resources */,
+				CA2D6FDD112F7712400103B0 /* [CP] Embed Pods Frameworks */,
+				38EAEE0712F1D620AA50C11C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -502,7 +521,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		693F0A93BB4847EA429A7A4D /* [CP] Copy Pods Resources */ = {
+		38EAEE0712F1D620AA50C11C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -524,7 +543,35 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7B630F08259C296A2F54872A /* [CP] Check Pods Manifest.lock */ = {
+		CA2D6FDD112F7712400103B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A4D316C5C9905CEC35D3EC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,26 +587,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A1EB6EBA5BD5F2433956DEFC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickFoodMenu/Pods-QuickFoodMenu-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -592,6 +619,7 @@
 				387481A22044C549004068CC /* FetchRestaurantInfoRequest.swift in Sources */,
 				38233D26200C48040016C2AC /* Restaurant.swift in Sources */,
 				3811930620BD2DD500BB0D47 /* HTTPMethod.swift in Sources */,
+				38C7E5B02108594E00186423 /* QFMObservable.swift in Sources */,
 				38157C0E20BE240500D45D19 /* RestaurantEndpoint.swift in Sources */,
 				3846026F20927F7D00EA89B5 /* MenuPicCollectionViewCell.swift in Sources */,
 				387DA2092005702A003C0E12 /* LocationService.swift in Sources */,
@@ -746,7 +774,7 @@
 		};
 		383BFEA81FFCB0090052E5AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 948773EEE0D864B3ED9C0A42 /* Pods-QuickFoodMenu.debug.xcconfig */;
+			baseConfigurationReference = 03C861EE03740D590FF6B453 /* Pods-QuickFoodMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -762,7 +790,7 @@
 		};
 		383BFEA91FFCB0090052E5AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7C191FB1DADEFF69E68A395 /* Pods-QuickFoodMenu.release.xcconfig */;
+			baseConfigurationReference = 3D78872F138E673F91DE2032 /* Pods-QuickFoodMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

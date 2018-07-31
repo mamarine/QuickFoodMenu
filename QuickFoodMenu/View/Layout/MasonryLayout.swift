@@ -47,9 +47,9 @@ class MasonryLayout: UICollectionViewFlowLayout {
         for item in 0..<collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
             let imageSize = delegate?.collectionView(collectionView, sizeForCellAtIndexPath: indexPath) ?? CGSize(width: 0, height: 0)
-            let height = cellPadding * 2 + imageSize.height * columnWidth / imageSize.width
+            let height = imageSize.height * columnWidth / imageSize.width
             let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
-            let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
+            let insetFrame = frame.insetBy(dx: cellPadding/2, dy: cellPadding/2)
             let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
             attributes.frame = insetFrame
             cache.append(attributes)

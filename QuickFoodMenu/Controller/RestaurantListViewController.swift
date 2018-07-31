@@ -23,7 +23,6 @@ class RestaurantListViewController: UITableViewController {
     func initVM() {
         viewModel.updateLoadingStatus = {
 
-
         }
         viewModel.reloadTableViewClosure = { [weak self] in
             self?.tableView.reloadData()
@@ -43,8 +42,7 @@ class RestaurantListViewController: UITableViewController {
 
         if let cell = cell  as? RestaurantTableViewCell {
             let cellVM = viewModel.getCellViewModel(at: indexPath)
-            cell.restaurantImageView.image = nil
-            cell.restaurantImageView.af_setImage(withURL: cellVM.coverImage.url)
+            cell.setupUI(viewModel: cellVM)
         }
 
         return cell

@@ -11,6 +11,7 @@ import Foundation
 struct RestaurantListCellViewModel {
     let coverImage:NetworkImage
     let images:[NetworkImage]
+    let name:String
 }
 
 class RestaurantListViewModel {
@@ -58,7 +59,7 @@ class RestaurantListViewModel {
     private func processFetchedRestaurant(restaurants:[Restaurant]) {
         var cellVMs = [RestaurantListCellViewModel]()
         for restaurant in restaurants {
-            let vm = RestaurantListCellViewModel(coverImage:restaurant.coverImage, images: restaurant.images)
+            let vm = RestaurantListCellViewModel(coverImage:restaurant.coverImage, images: restaurant.images, name:restaurant.name)
             cellVMs.append(vm)
         }
         self.restaurants = restaurants
