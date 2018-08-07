@@ -18,7 +18,7 @@ enum NetworkResponse:String {
     case unableToDecode = "We could not decode the response."
 }
 
-enum Result<String>{
+enum Result<String> {
     case success
     case failure(String)
 }
@@ -84,7 +84,7 @@ public class RestaurantDataManager {
                     do {
                         let apiResponse = try JSONDecoder().decode(Restaurant.self, from: responseData)
                         completion(apiResponse,nil)
-                    }catch {
+                    } catch {
                         print(error)
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
@@ -96,7 +96,7 @@ public class RestaurantDataManager {
         }
     }
 
-    fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String>{
+    fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
         switch response.statusCode {
         case 200...299: return .success
         case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
