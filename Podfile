@@ -7,4 +7,16 @@ target 'QuickFoodMenu' do
 
   # Pods for QuickFoodMenu
   pod 'Alamofire', '~> 4.5'
+  pod 'AlamofireImage'
+
+  # google place
+
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+
+  # RxSwift
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
 end
