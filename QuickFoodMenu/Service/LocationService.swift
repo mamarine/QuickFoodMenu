@@ -15,7 +15,6 @@ final class LocationService : NSObject {
 
     private var placesClient: GMSPlacesClient!
     private let locationManager = CLLocationManager()
-    // MARK: singleton init
     static let sharedInstance = LocationService()
 
     private override init() {

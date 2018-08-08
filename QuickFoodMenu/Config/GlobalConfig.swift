@@ -14,5 +14,5 @@ enum NetworkBuildConfiguration {
 }
 
 class GlobalBuildConfig {
-    static var networkConfig = NetworkBuildConfiguration.debug
+    static var networkAPIConfig = NetworkBuildConfiguration.debug
 }

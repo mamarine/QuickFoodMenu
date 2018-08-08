@@ -1,5 +1,5 @@
 //
-//  RestaurantApiResponse.swift
+//  RestaurantGoogleApiResponse.swift
 //  QuickFoodMenu
 //
 //  Created by maojie on 5/30/18.

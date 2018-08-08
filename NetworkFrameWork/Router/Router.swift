@@ -101,7 +101,8 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
                                          request: inout URLRequest) throws {
         do {
             try bodyEncoding.encode(urlRequest: &request,
-                                    bodyParameters: bodyParameters, urlParameters: urlParameters)
+                                    bodyParameters: bodyParameters,
+                                    urlParameters: urlParameters)
         } catch {
             throw error
         }

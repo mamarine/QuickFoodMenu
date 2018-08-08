@@ -82,9 +82,14 @@ public class RestaurantDataManager {
                         return
                     }
                     do {
+
+
                         let apiResponse = try JSONDecoder().decode(Restaurant.self, from: responseData)
                         completion(apiResponse,nil)
                     } catch {
+                        if let errorData = try? JSONSerialization.jsonObject(with: responseData, options: []) as? [String:AnyObject] {
+                            print(errorData ?? "empty Json")
+                        }
                         print(error)
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }

@@ -1,5 +1,5 @@
 //
-//  RestaurantEndpoint.swift
+//  RestaurantGoogleEndpoint.swift
 //  QuickFoodMenu
 //
 //  Created by maojie on 5/29/18.
@@ -11,12 +11,11 @@ import Foundation
 public enum RestaurantGoogleApi {
     case restaurantInfo(placeID:String)
     case restaurantPhoto(maxwidth:Int,photoreference:String)
-    case dummy
 }
 
 extension RestaurantGoogleApi: EndPointType {
     var buildConfigBaseURL: String {
-        switch GlobalBuildConfig.networkConfig {
+        switch GlobalBuildConfig.networkAPIConfig {
         case .debug:
             return "https://maps.googleapis.com/maps/api/place"
         case .production:
@@ -25,7 +24,7 @@ extension RestaurantGoogleApi: EndPointType {
     }
 
     var buildConfigAPIKey: String {
-        switch GlobalBuildConfig.networkConfig {
+        switch GlobalBuildConfig.networkAPIConfig {
         case .debug:
             return GOOGLE_PLACE_WEB_API_KEY
         case .production:
@@ -44,8 +43,6 @@ extension RestaurantGoogleApi: EndPointType {
             return "/details/json"
         case .restaurantPhoto:
             return "/photo"
-        case .dummy:
-            return "dummy"
         }
     }
 
@@ -66,8 +63,6 @@ extension RestaurantGoogleApi: EndPointType {
                                       urlParameters: ["maxwidth":maxwidth,
                                                       "photoreference":photoreference,
                                                       "key":buildConfigAPIKey])
-        default:
-            return .request
         }
     }
 
