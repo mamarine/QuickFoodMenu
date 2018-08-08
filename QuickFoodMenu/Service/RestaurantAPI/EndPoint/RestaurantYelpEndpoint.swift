@@ -18,7 +18,6 @@ extension RestaurantYelpApi: EndPointType {
         switch GlobalBuildConfig.networkAPIConfig {
         case .debug:
             return "https://api.yelp.com/v3"
-//            return "https://api.yelp.com/v3/businesses/search?term=delis&latitude=37.786882&longitude=-122.399972"
         case .production:
             return "https://api.yelp.com/v3"
         }
@@ -54,7 +53,6 @@ extension RestaurantYelpApi: EndPointType {
     var task: HTTPTask {
         switch self {
         case .restaurantInfo(let name):
-            //name=Bancarella&city=San Francisco&address1=350 Powell St&state=ca&country=US
             return .requestParameters(bodyParameters: ["Content-Type":"application/json",
                                                        "Authorization":"Bearer " + buildConfigAPIKey],
                                       bodyEncoding: .urlEncoding,
